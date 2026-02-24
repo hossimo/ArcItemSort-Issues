@@ -1,0 +1,86 @@
+name: "Missing item"
+description: "Submit details for an item that is missing from the database."
+title: "[Missing Item]: <item name>"
+labels:
+  - "missing-item"
+assignees: []
+body:
+  - type: input
+    id: item_name
+    attributes:
+      label: Item Name
+      placeholder: "Example: Iron Sword"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: item_rarity
+    attributes:
+      label: Item Rarity
+      options:
+        - Common
+        - Uncommon
+        - Rare
+        - Epic
+        - Legendary
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: max_stack
+    attributes:
+      label: Max Stack
+      description: "Enter a number (e.g., 1, 10, 99)."
+      placeholder: "99"
+    validations:
+      required: true
+
+  - type: input
+    id: sell_value
+    attributes:
+      label: Sell Value
+      description: "Value when sold"
+      placeholder: "25"
+    validations:
+      required: true
+
+  - type: input
+    id: weight
+    attributes:
+      label: Weight
+      description: "Item weight"
+      placeholder: "0.5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "In-game description"
+    validations:
+      required: true
+
+  - type: textarea
+    id: recycle_materials
+    attributes:
+      label: Recycle Materials
+      description: "List what you get from recycling (and quantities if known)."
+      placeholder: |
+        Example:
+        - Chemicals x4
+        - Syringe x1
+    validations:
+      required: false
+
+  - type: textarea
+    id: salvage_materials
+    attributes:
+      label: Salvage Materials
+      description: "List what you get from salvaging (and quantities if known)."
+      placeholder: |
+        Example:
+        - Syringe x1
+    validations:
+      required: false
