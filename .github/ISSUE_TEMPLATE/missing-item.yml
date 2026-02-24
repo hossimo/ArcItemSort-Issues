@@ -25,7 +25,7 @@ body:
         - Legendary
         - Not sure
     validations:
-      required: true
+      required: false
 
   - type: input
     id: max_stack
@@ -34,7 +34,7 @@ body:
       description: "Enter a number (e.g., 1, 10, 99)."
       placeholder: "99"
     validations:
-      required: true
+      required: false
 
   - type: input
     id: sell_value
@@ -43,7 +43,7 @@ body:
       description: "Value when sold"
       placeholder: "25"
     validations:
-      required: true
+      required: false
 
   - type: input
     id: weight
@@ -52,7 +52,7 @@ body:
       description: "Item weight"
       placeholder: "0.5"
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: description
@@ -60,7 +60,7 @@ body:
       label: Description
       placeholder: "In-game description"
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: recycle_materials
