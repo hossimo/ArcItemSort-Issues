@@ -1,6 +1,6 @@
-name: "Missing item"
-description: "Submit details for an item that is missing from the database."
-title: "[Missing Item]: <item name>"
+name: "Missing/Incorrect item"
+description: "Submit details for an item that is missing or incorrect from the database. For missing items enter as much as you can. For incorrect items just enter the corrected value."
+title: "[Fix Item]: <item name>"
 labels:
   - "missing-item"
 assignees: []
